@@ -1,4 +1,4 @@
-# OpenAI API Tools Suite
+# <p align="center">:rocket: OpenAI API Tools Suite :rocket:</p>
 
 This web application utilizes Flask and the OpenAI API to offer a range of features including vision image analysis, image generation from text, audio to text transcription, and more. It's designed to showcase how Flask can be integrated with OpenAI's powerful models to create interactive and useful applications.
 
