@@ -8,8 +8,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY .env /app/.env
 
-EXPOSE 80
-
-ENV NAME OPENAI-SUITE
+EXPOSE 5000
 
 CMD ["python", "app.py"]
