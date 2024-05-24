@@ -40,6 +40,14 @@ FLASK_SECRET_KEY=a_secret_key_for_session_management
 flask run
 ```
 
+**Build and run application in Docker Container**
+
+```bash
+docker build -t openai-suite .
+docker run -p 5000:5000 openai-suite
+```
+
+
 **Usage**
 
 After starting the app, navigate to http://127.0.0.1:5000/ in your web browser. You'll be greeted with the main interface where you can choose the functionality you want to explore.
