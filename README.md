@@ -50,6 +50,7 @@ After starting the app, navigate to http://127.0.0.1:5000/ in your web browser. 
 If you want to build and launch this application in a Docker Container, execute these commands:
 
 ```bash
+export OPENAI_API_KEY=your_openai_api_key_here
 docker build -t openai-suite .
 docker run -p 5000:5000 openai-suite
 ```
