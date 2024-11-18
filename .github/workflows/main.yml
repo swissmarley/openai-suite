@@ -11,5 +11,5 @@ jobs:
       - name: Build and push Docker image
         run:
           docker login --username swissmarley --password ${{ secrets.GITHUB_TOKEN }}
-          docker build . --tag ghcr.io/swissmarley/openai-suite:latest
+          docker build . -t ghcr.io/swissmarley/openai-suite:latest
           docker push ghcr.io/swissmarley/openai-suite:latest
