@@ -39,7 +39,7 @@ jobs:
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.ghcr.io }}
 
       # Extract metadata for Docker image
       - name: Extract Docker metadata
@@ -77,5 +77,3 @@ jobs:
           for tag in $(echo "${{ steps.meta.outputs.tags }}" | tr ',' '\n'); do
             cosign sign "$tag"
           done
-
-Version 2 of 2
