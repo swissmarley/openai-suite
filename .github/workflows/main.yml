@@ -12,7 +12,7 @@ jobs:
       
       - name: Login to GitHub Container Registry
         run: |
-          docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.ghcr.io }}
+          docker login ghcr.io --username ${{ github.actor }} --password ${{ secrets.ghcr.io }}
 
       - name: Build Docker image
         run: |
