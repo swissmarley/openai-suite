@@ -12,7 +12,7 @@ jobs:
       
       - name: Login to GitHub Container Registry
         run: |
-          echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+          echo "${{ secrets.ghcr.io }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
       - name: Build Docker image
         run: |
@@ -21,3 +21,4 @@ jobs:
       - name: Push Docker image
         run: |
           docker push ghcr.io/swissmarley/openai-suite:latest
+
