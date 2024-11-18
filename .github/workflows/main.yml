@@ -21,4 +21,3 @@ jobs:
       - name: Push Docker image
         run: |
           docker push ghcr.io/swissmarley/openai-suite:latest
-
